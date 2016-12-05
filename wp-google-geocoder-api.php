@@ -102,8 +102,6 @@ if ( ! class_exists( 'GoogleMapsGeocoderAPI' ) ) {
 
 			$request = $this->base_uri . static::$output . '?address=' . $address . '&key=' . static::$api_key;
 
-			echo $request;
-
 			return $this->fetch( $request );
 
 		}
